@@ -1,0 +1,49 @@
+class Rectangle {
+public:
+    int width;
+    int height;
+
+    void setDimensions(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    int calculateArea() {
+        return width * height;
+    }
+private:
+    int privateMember;
+};
+
+class Circle {
+public:
+    float radius;
+
+    float calculateArea() {
+        return 3.14 * radius * radius;
+    }
+private:
+    float privateMember;
+};
+
+int main() {
+    // Create objects of Rectangle and Circle classes
+    Rectangle myRectangle;
+    Circle myCircle;
+
+    // Set dimensions for the rectangle
+    myRectangle.setDimensions(5, 8);
+
+    // Set radius for the circle
+    myCircle.radius = 3.0;
+
+    // Calculate and display area for the rectangle
+    int rectangleArea = myRectangle.calculateArea();
+    cout << "Rectangle Area: " << rectangleArea << endl;
+
+    // Calculate and display area for the circle
+    float circleArea = myCircle.calculateArea();
+    cout << "Circle Area: " << circleArea << endl;
+
+    return 0;
+}

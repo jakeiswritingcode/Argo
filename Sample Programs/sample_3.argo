@@ -1,0 +1,11 @@
+class Employee {
+public:
+    string name;
+    int age;
+
+    void displayInfo() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+private:
+    int privateSalary;
+};

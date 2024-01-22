@@ -1,0 +1,28 @@
+class Rectangle {
+public:
+    int width;
+    int height;
+
+    void setDimensions(int w, int h) {
+        width = w;
+        height = h;
+    }
+
+    int calculateArea() {
+        return width * height;
+    }
+private:
+    int privateMember;
+};
+
+
+class Circle {
+public:
+    float radius;
+
+    float calculateArea() {
+        return 3.14 * radius * radius;
+    }
+private:
+    float privateMember;
+};
